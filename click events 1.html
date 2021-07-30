@@ -1,0 +1,16 @@
+<html>
+<body>
+	<p>Click anywhere in this example.</p>
+<p id="log"></p>
+<script>
+	// getting coordinates of this page
+	let log = document.getElementById('log');
+
+document.onclick = inputChange;
+
+function inputChange(e) {
+  log.textContent = `Position: (${e.clientX}, ${e.clientY})`;
+}
+</script>
+</body>
+</html>
